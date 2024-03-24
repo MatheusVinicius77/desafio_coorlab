@@ -13,8 +13,10 @@ def read_transports():
     return db.transports
 
 
+
+
 @router.get("/transports/comfortable/{destination}/{date}")
-def read_transports(destination:str, date:str):
+def get_most_comfortable(destination:str, date:str):
     # GET ALL TRANSPORTS FOR THAT DESTINATION
     matching_destination_transports = [transport for transport in db.transports if transport.city.lower() == destination.lower()]
     travel_date = conver_string_to_date(date)
@@ -34,7 +36,7 @@ def read_transports(destination:str, date:str):
 
 
 @router.get("/transports/economic/{destination}/{date}")
-def read_transports(destination:str, date:str):
+def get_most_economic(destination:str, date:str):
         matching_destination_transports = [transport for transport in db.transports if transport.city.lower() == destination.lower()]
         travel_date = conver_string_to_date(date)
         if matching_destination_transports:
