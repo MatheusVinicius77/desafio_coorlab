@@ -176,6 +176,171 @@
       "seat": "13D",
       "bed": "6B",
       "travel_date": "2024-03-03"
+    },
+    {
+        "id": 16,
+        "name": "Expresso Oriente",
+        "price_confort": "R$ 150.20",
+        "price_econ": "R$ 82.40",
+        "city": "Recife",
+        "duration": "24h",
+        "seat": "10C",
+        "bed": "5A",
+        "travel_date": "2024-03-22"
+    },
+    {
+        "id": 17,
+        "name": "Expresso Oriente",
+        "price_confort": "R$ 105.60",
+        "price_econ": "R$ 64.30",
+        "city": "Salvador",
+        "duration": "16h",
+        "seat": "5B",
+        "bed": "3C",
+        "travel_date": "2024-07-30"
+    },
+    {
+        "id": 18,
+        "name": "Expresso Oriente",
+        "price_confort": "R$ 280.40",
+        "price_econ": "R$ 170.80",
+        "city": "Florianópolis",
+        "duration": "20h",
+        "seat": "8D",
+        "bed": "6B",
+        "travel_date": "2024-10-10"
+    },
+    {
+        "id": 19,
+        "name": "Expresso Oriente",
+        "price_confort": "R$ 155.75",
+        "price_econ": "R$ 92.30",
+        "city": "Porto Alegre",
+        "duration": "22h",
+        "seat": "11A",
+        "bed": "2D",
+        "travel_date": "2024-12-20"
+    },
+    {
+        "id": 20,
+        "name": "Expresso Oriente",
+        "price_confort": "R$ 210.90",
+        "price_econ": "R$ 130.20",
+        "city": "Brasília",
+        "duration": "14h",
+        "seat": "6C",
+        "bed": "4A",
+        "travel_date": "2024-08-15"
+    },
+    {
+        "id": 21,
+        "name": "ZazTraz",
+        "price_confort": "R$ 63.40",
+        "price_econ": "R$ 47.80",
+        "city": "Recife",
+        "duration": "12h",
+        "seat": "15A",
+        "bed": "7C",
+        "travel_date": "2024-05-05"
+    },
+    {
+        "id": 22,
+        "name": "ZazTraz",
+        "price_confort": "R$ 180.30",
+        "price_econ": "R$ 102.50",
+        "city": "Salvador",
+        "duration": "16h",
+        "seat": "2B",
+        "bed": "3D",
+        "travel_date": "2024-11-20"
+    },
+    {
+        "id": 23,
+        "name": "ZazTraz",
+        "price_confort": "R$ 270.80",
+        "price_econ": "R$ 180.20",
+        "city": "Florianópolis",
+        "duration": "20h",
+        "seat": "7D",
+        "bed": "5B",
+        "travel_date": "2024-09-10"
+    },
+    {
+        "id": 24,
+        "name": "ZazTraz",
+        "price_confort": "R$ 88.90",
+        "price_econ": "R$ 55.60",
+        "city": "Porto Alegre",
+        "duration": "22h",
+        "seat": "18A",
+        "bed": "4D",
+        "travel_date": "2024-03-22"
+    },
+    {
+        "id": 25,
+        "name": "ZazTraz",
+        "price_confort": "R$ 115.60",
+        "price_econ": "R$ 72.80",
+        "city": "Brasília",
+        "duration": "14h",
+        "seat": "4C",
+        "bed": "6A",
+        "travel_date": "2024-08-15"
+    },
+    {
+        "id": 26,
+        "name": "Rapido Jacutinga",
+        "price_confort": "R$ 85.20",
+        "price_econ": "R$ 52.70",
+        "city": "Recife",
+        "duration": "8h",
+        "seat": "13B",
+        "bed": "2D",
+        "travel_date": "2024-10-10"
+    },
+    {
+        "id": 27,
+        "name": "Rapido Jacutinga",
+        "price_confort": "R$ 200.40",
+        "price_econ": "R$ 130.90",
+        "city": "Salvador",
+        "duration": "16h",
+        "seat": "6D",
+        "bed": "1A",
+        "travel_date": "2024-12-20"
+    },
+    {
+        "id": 28,
+        "name": "Rapido Jacutinga",
+        "price_confort": "R$ 310.75",
+        "price_econ": "R$ 210.30",
+        "city": "Florianópolis",
+        "duration": "20h",
+        "seat": "21A",
+        "bed": "7B",
+        "travel_date": "2024-05-05"
+    },
+    {
+        "id": 29,
+        "name": "Rapido Jacutinga",
+        "price_confort": "R$ 180.90",
+        "price_econ": "R$ 115.20",
+        "city": "Porto Alegre",
+        "duration": "22h",
+        "seat": "12C",
+        "bed": "3C",
+        "travel_date": "2024-09-10"
+    },
+    {
+        "id": 30,
+        "name": "Rapido Jacutinga",
+        "price_confort": "R$ 95.60",
+        "price_econ": "R$ 64.80",
+        "city": "Brasília",
+        "duration": "14h",
+        "seat": "3D",
+        "bed": "5A",
+        "travel_date": "2024-08-15"
     }
   ]
 }
