@@ -30,3 +30,15 @@ def read_transports(destination:str, date:str):
         return more_comfortable
     
     raise HTTPException(status_code=404, detail=f"No transports found for destination: {destination}")
+
+
+
+@router.get("/transports/economic/{destination}/{date}")
+def read_transports(destination:str, date:str):
+        matching_destination_transports = [transport for transport in db.transports if transport.city.lower() == destination.lower()]
+        travel_date = conver_string_to_date(date)
+        if matching_destination_transports:
+            sorted_transports = sorted(matching_destination_transports, key= lambda transport:transport.price_econ)
+            more_economic = sorted_transports[0]
+        
+            return more_economic
