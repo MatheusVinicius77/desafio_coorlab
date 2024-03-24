@@ -38,7 +38,11 @@ def read_transports(destination:str, date:str):
         matching_destination_transports = [transport for transport in db.transports if transport.city.lower() == destination.lower()]
         travel_date = conver_string_to_date(date)
         if matching_destination_transports:
+            # SORTING BY ITS ECONOMIC PRICE
             sorted_transports = sorted(matching_destination_transports, key= lambda transport:transport.price_econ)
             more_economic = sorted_transports[0]
         
             return more_economic
+
+        raise HTTPException(status_code=404, detail=f"No transports found for destination: {destination}")
+        
