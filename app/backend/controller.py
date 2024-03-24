@@ -15,8 +15,8 @@ def read_transports():
 
 @router.get("/cities/")
 def read_transports_cities():
-    # EXCLUDING ALL THE REPETED CITY
-    return list(set([transport.city  for transport in db.transports]))
+    # EXCLUDING ALL THE REPETED CITY AND SORTING
+    return sorted(list(set([transport.city  for transport in db.transports])))
 
 
 @router.get("/transports/comfortable/{destination}/{date}")
