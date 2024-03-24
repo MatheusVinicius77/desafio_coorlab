@@ -1,0 +1,30 @@
+.bg-soft-black{
+    background-color: var(--color-brand-0);
+}
+
+.bg-soft-gray{
+    background-color: var(--color-brand-2);
+}
+
+.bg-white{
+    background-color: var(--color-brand-3);
+}
+
+.bg-sea-green{
+    background-color: var(--color-brand-1);
+}
+
+.bg-dark-orange{
+    background-color: var(--color-brand-4);
+}
+
+.color-soft-black {
+    color: var(--color-grey-0);
+}
+
+.color-white {
+    color: var(--color-brand-3);
+}
+
+
+
