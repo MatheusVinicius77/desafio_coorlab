@@ -60,7 +60,7 @@
                     </div>
                     <div class="trip__price_wrapper bg-soft-gray">
                       <p class="text-3 trip__price ">Preço:</p>
-                      <p>R$ {{ comfortable_travel.price_confort}}</p>
+                      <p>{{ comfortable_travel.price_confort}}</p>
                     </div>
                   </div>
                 </div>
