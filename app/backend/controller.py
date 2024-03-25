@@ -1,12 +1,17 @@
 from fastapi import APIRouter, HTTPException
 from model import Transport, TransportDB
-from utils import conver_string_to_date, extract_hours
+from utils import conver_string_to_date, extract_hours, get_best_travel, get_best_comfortable_travel
 import os
 
 db_file_path =  os.path.join(os.path.dirname(os.getcwd()), 'data.json')
 router = APIRouter()
 
 db = TransportDB(db_file_path)
+
+
+@router.get("/")
+def read_transports():
+    return {"api running"}
 
 @router.get("/transports/")
 def read_transports():
@@ -30,10 +35,10 @@ def get_most_comfortable(destination:str, date:str):
         # SORTING ALL THE TRANSPORTS BY ITS DURATION
         sorted_transports = sorted(matching_destination_transports, key= extract_hours)
         
-        # GETTING THE MOST COMFORTABLE 
-        more_comfortable = sorted_transports[0]
+        # GETTING THE MOST COMFORTABLE (THE THE SHORTEST DURATION)
         
-        return more_comfortable
+        
+        return get_best_comfortable_travel(sorted_transports,travel_date,"comfortable")
     
     raise HTTPException(status_code=404, detail=f"No transports found for destination: {destination}")
 
@@ -46,9 +51,8 @@ def get_most_economic(destination:str, date:str):
         if matching_destination_transports:
             # SORTING BY ITS ECONOMIC PRICE
             sorted_transports = sorted(matching_destination_transports, key= lambda transport:transport.price_econ)
-            more_economic = sorted_transports[0]
         
-            return more_economic
+            return get_best_travel(sorted_transports,travel_date,"economic")
 
         raise HTTPException(status_code=404, detail=f"No transports found for destination: {destination}")
         
